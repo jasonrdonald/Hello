@@ -1,8 +1,10 @@
 language: csharp
-solution: ./HelloWorld/HelloWorld.sln
+solution: HelloWorld.sln
 install:
-  - nuget restore ./HelloWorld/HelloWorld.sln
   - nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory testrunner
 script:
-  - xbuild /p:Configuration=Release ./HelloWorld/HelloWorld.sln
-  - mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./HelloWorld.Tests/bin/Release/HelloWorld.Tests.dll
+  - build_number=$TRAVIS_BUILD_NUMBER
+  - version_number=0.9.0
+  - xbuild /p:Configuration=Release HelloWorld.sln
+  - mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./bin/Release/HelloWorld.Tests.dll
+  - zip -r build.zip src bin/Release/HelloWorld.dll readme.md 

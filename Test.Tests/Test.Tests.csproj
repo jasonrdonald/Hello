@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CA54C5FD-4BFC-4FA7-9055-1075E6953146}</ProjectGuid>
+    <ProjectGuid>{6E124C24-5020-45A8-BE23-AE4C119FC973}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HelloWorld.Tests</RootNamespace>
-    <AssemblyName>HelloWorld.Tests</AssemblyName>
+    <RootNamespace>Test.Tests</RootNamespace>
+    <AssemblyName>Test.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -52,9 +52,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\HelloWorld\HelloWorld.csproj">
-      <Project>{64C4E33B-BC6A-48E3-8272-F196A187CAAE}</Project>
-      <Name>HelloWorld</Name>
+    <ProjectReference Include="..\Test\Test.csproj">
+      <Project>{FF31690D-22B9-4B11-B324-89BA26B90366}</Project>
+      <Name>Test</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

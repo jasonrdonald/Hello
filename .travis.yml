@@ -4,4 +4,4 @@ script:
   - build_number=$TRAVIS_BUILD_NUMBER
   - version_number=0.9.0
   - xbuild /p:Configuration=Release HelloWorld.sln
-  - zip -r build.zip src bin/Release/HelloWorld.dll readme.md
+  - zip -r build.zip src bin/Release/HelloWorld.dll readme.md 
